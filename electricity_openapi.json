@@ -1,0 +1,52 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "get electricity price",
+    "description": "Retrieves current electricity price data for a specific date.",
+    "version": "v1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://helloworld0707.azurewebsites.net/api"
+    }
+  ],
+  "auth": [],
+  "paths": {
+    "/getelectricityprice": {
+      "get": {
+        "description": "Get electricity price information for a specific date",
+        "operationId": "GetElectricityPrice",
+        "parameters": [
+          {
+           "name": "date",
+           "in": "query",
+           "description": "Provide the date for which to retrieve electricity price information in YYYY-MM-DD format",
+           "required": true,
+           "schema": {
+             "type": "string"
+          }
+         }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Data not found"
+          }
+        },
+        "deprecated": false
+      }
+    }
+  },
+  "components": {
+    "schemes": {}
+  }
+}

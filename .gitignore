@@ -1,0 +1,224 @@
+# Environment and Configuration Files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.staging
+*.env
+config.json
+secrets.json
+appsettings.*.json
+
+# Azure and Authentication
+.azure/
+azure.json
+.azureml/
+auth.json
+*.publishsettings
+*.azurePubxml
+*.pubxml
+
+# API Keys and Tokens
+*key*.txt
+*token*.txt
+*secret*.txt
+api_keys.py
+credentials.py
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+conda-env/
+.conda/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+jupyter_config/
+.jupyter/
+
+# AI/ML Specific
+models/
+*.h5
+*.pkl
+*.joblib
+*.model
+*.weights
+*.ckpt
+*.pb
+*.onnx
+*.tflite
+data/raw/
+data/processed/
+data/interim/
+dataset/
+datasets/
+embeddings/
+vectors/
+checkpoints/
+logs/
+tensorboard/
+mlruns/
+.mlflow/
+
+# Generated Images and Charts
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.svg
+chart_*.png
+*_image_file.png
+generated_*.png
+output_*.png
+
+# Generated Files
+*.generated
+*.tmp
+temp/
+tmp/
+cache/
+.cache/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+.spyderproject
+.spyproject
+.ropeproject
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Testing
+.tox/
+.nox/
+.coverage
+.pytest_cache/
+.cache/
+pytest.ini
+.testmondata/
+htmlcov/
+.coverage.*
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Documentation
+docs/_build/
+.readthedocs.yml
+site/
+
+# Package Files
+*.tar.gz
+*.zip
+*.rar
+*.7z
+
+# Database Files
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# Log Files
+*.log
+logs/
+*.log.*
+
+# Backup Files
+*.bak
+*.backup
+*~
+
+# Temporary Agent Files
+agent_*.json
+thread_*.json
+run_*.json
+*_agent_temp/
+
+# Azure AI Foundry Generated Files
+.ai_foundry/
+.azureai/
+project_cache/
+
+# MCP Server Files
+mcp_cache/
+mcp_temp/
+
+# Local Development
+local_config.py
+dev_settings.py
+test_config.py
+debug/
+sandbox/
+playground/
+
+# Security Certificates
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
+
+# Large Data Files (adjust extensions as needed)
+*.csv
+*.parquet
+*.feather
+*.hdf5
+*.npz
+
+# Node.js (if any frontend components)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# End of file
