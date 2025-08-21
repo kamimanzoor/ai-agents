@@ -11,13 +11,6 @@ from semantic_kernel.connectors.openapi_plugin.openapi_function_execution_parame
     )
 from semantic_kernel.agents import AzureAIAgent, AzureAIAgentSettings, AzureAIAgentThread
 
-# Currently we are using our own httpclient and setting header onto it and passing it to the plugin 
-# alternate ways could be tool_resources: see agent-mcp-apis.sh but tool_resources donot 
-# seem to be there for openapi_tool
-# Another way could be to use tools_override as mentioned here: "Since you're invoking the agent from an Azure Function, you can generate the bearer token within your function and then pass it directly to the agent using the tools_override parameter, which is supported by the Azure AI Agent Service via the Assistants API (compatible with OpenAI).
-# This parameter allows you to override the tool’s authentication header per request. In your request payload, include the bearer token as part of the Authorization header like this: "Authorization": "Bearer <your-generated-token>"."
-# https://learn.microsoft.com/en-us/answers/questions/2276509/how-to-use-custom-bearer-token-authentication-in-a
-
 async def main():
     load_dotenv()
     azure_ai_agent_settings = AzureAIAgentSettings()
