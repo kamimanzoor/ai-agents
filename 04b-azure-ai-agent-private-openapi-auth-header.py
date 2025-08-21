@@ -1,5 +1,3 @@
-# Azure imports for project client and credentials
-# from azure.ai.projects.models import (FileSearchTool, OpenAIFile, VectorStore)
 import asyncio
 import os
 import jsonref
@@ -37,7 +35,7 @@ async def main():
 
         print(f"Created agent, ID: {agent.id}")
 
-        # Wrap the agent in a Semantic Kernel agent but MCP call is hanging, probably waiting for approval
+        # Wrap the agent in a Semantic Kernel agent
 
         agent = AzureAIAgent(
             client=project_client,
